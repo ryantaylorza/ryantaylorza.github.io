@@ -124,7 +124,7 @@ nav ul {
 nav a,
 nav li {
   display: block;
-  color: #282bee;
+  color: #4c4ff1;
   text-align: center;
   padding: 0.75rem;
   text-decoration: none;
@@ -134,11 +134,11 @@ nav li {
 }
 nav a,
 footer a:visited {
-  color: #f5f5f5;
+  color: #88f18d;
 }
 nav a:hover {
-  background-color: #d2f898;
-  color: #202030;
+  background-color:#88f18d;
+  color: #0b0b25;
 }
 nav ul.hide {
   display: none;
@@ -147,7 +147,7 @@ nav ul li.current-page a {
   text-decoration: underline;
 }
 main {
-  font-family: Lato, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 section,
 article {
@@ -157,29 +157,29 @@ article {
 .intro p,
 article {
   width: 100%;
-  height: 100px;
-  border: solid #7f675b 5px;
+  height: 120px;
+  border: solid #30265a 5px;
 }
 
 .forecast ul {
-  background-color: #7f675b;
+  background-color: #749de9;
   list-style-type: none;
   display: flex;
   justify-content: space-around;
 }
 .forecast ul li {
-  margin: 10px;
-  margin-left: -20px;
+  margin: 15px;
+  margin-left: -18px;
 }
 article {
   margin-bottom: 10px;
 }
 footer {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 footer a:link {
-  color: #f5f5f5;
+  color: #a2bff3;
 }
 #footer-head {
   display: grid;
@@ -192,9 +192,9 @@ footer a:link {
   grid-row: 1 / 2;
   justify-self: left;
 }
-#map {
-  height: 100px;
-  background-color: #7f675b;
+#LocalMap {
+  height: 150px;
+  background-color: #30db63;
   text-align: center;
   width: 100%;
   grid-column: 1 / 2;
@@ -204,7 +204,7 @@ footer a:link {
   text-align: center;
   font-size: 0.8em;
   margin-bottom: 0px;
-  background-color: #064789;
+  background-color: #0668ca;
 }
 .social {
   display: none;
