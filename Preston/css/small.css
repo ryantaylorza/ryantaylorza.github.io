@@ -8,18 +8,14 @@ h1{
   font-size: 15px;
 }
 h2{
-  font-size: 12px;
+  font-size: 11px;
 }
 h3{
   font-size: 9px;
 }
-h4, p{
-  font-size: 10px;
-  margin-left: 5px;
-}
 h4{
-  margin-top: -10px;
-  margin-bottom: -10px;
+  font-size: 7px;
+
 }
 header, footer{
   background-color: #404e4d;
