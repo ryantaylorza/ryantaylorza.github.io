@@ -30,7 +30,7 @@ header, footer{
 }
 main{
   margin: 10px;
-  display:grid;
+  display:flex;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1em;
 }
