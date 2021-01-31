@@ -5,16 +5,16 @@ body {
   padding: 16px;
 }
 h1{
-  font-size: 7vw;
+  font-size: 15px;
 }
 h2{
-  font-size: 5vw;
+  font-size: 12px;
 }
 h3{
-  font-size: 20px;
+  font-size: 9px;
 }
 h4, p{
-  font-size: 18px;
+  font-size: 10px;
   margin-left: 5px;
 }
 h4{
