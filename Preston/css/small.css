@@ -129,7 +129,7 @@ b { color: #05061a}
   color: lightblue;
   background: #05061a;
   width: 10%;
-  hight: 10%;
+  height: 10%;
   text-align: space-evenly;
  }
 
@@ -165,7 +165,7 @@ a:active {
 display: grid;
 grid-gap: .25%;
 grid-template-columns:25% 75%;
-Justify: space-evenly;
+justify-content: space-evenly;
 padding: 0.1%;
 padding-left: 2%;
 padding-right: 2%;
@@ -173,19 +173,19 @@ padding-right: 2%;
 
 .s2 { 
   display: block;
-  Justify: space-evenly;
+  justify-content: space-evenly;
   height: 100%;
   width:100%}
 .s1 { 
   display: block;
-  justify: space-evenly;
+  justify-content: space-evenly;
   background-color: #EDFDF7;
   color: black ;
   padding: 0.1%;
 }
 .image {
   display: flex;
-  justify: space-evenly;
+  justify-content: space-evenly;
   width: 25%; 
   height: 25%;
   box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
@@ -287,12 +287,12 @@ input[type=number] {
 }
 .s21{text-align: center;
 color: black;}
-.G18{align: center}
+.G18{align-items: center}
 
 .grid{display: block;
 width: 15%;
-justify: center;
-align: center;}
+justify-content: center;
+align-items: center;}
 
 table{
 display: table;
@@ -336,8 +336,8 @@ vertical-align: middle;}
       #cell-62, #cell-71, #cell-80 { border-right:  1px solid #FFFFFF; }
       #cell-78, #cell-79, #cell-80 { border-bottom: 1px solid #FFFFFF; }
       #cell-60, #cell-69, #cell-78 { border-left:   1px solid #FFFFFF; }
-      }
-td {
+
+      td {
         border: 1px solid #000000;
         text-align: center;
         vertical-align: middle;  
