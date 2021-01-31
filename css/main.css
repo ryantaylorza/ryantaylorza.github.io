@@ -7,7 +7,7 @@
   grid-column-template: 25% 50% 25%;
   justify-content: space-evenly;
   text-align: center;
-  height: 15%;
+  height: 10%;
   padding: 1%;
 }
 
@@ -28,35 +28,10 @@ body {
 bdu {
   color: #0b9c4e;
   }
-h1 {font-family: 'Archivo Black', sans-serif;
-  font-weight: bold;
-  color: #0b9c4e;
-  font-size: 250%;
-}
-h2 {
-  font-family: 'Archivo Black', sans-serif;
-  color: #0b9c4e;
-}
-h3 { 
-  font-family: 'Archivo Black', sans-serif;
-  color: #0b9c4e;
-  }
-h4 { 
-  font-family: 'Archivo Black', sans-serif;
-  color: #0b9c4e;
-  text-align: center;
-  padding: 10px;
-  }
-h5 { 
-  font-family: 'Archivo Black', sans-serif;
-  color: #0b9c4e;
-  }
 p  {
   font-family: 'Archivo Black', sans-serif;
   color: #05061a;
-  text-align: left;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding: 1%;
  }
 b { color: #05061a}
 
@@ -170,8 +145,7 @@ padding-right: 2%;
 .s2 { 
   display: block;
   Justify: space-evenly;
-  height: 100%;
-  width:100%}
+  }
 .s1 { 
   display: block;
   justify: space-evenly;
@@ -180,17 +154,8 @@ padding-right: 2%;
   padding: 0.1%;
 }
 .image {
-  display: flex;
-  flex-wrap: wrap;
-  justify: space-evenly;
-  width: 25%; 
-  height: 25%;
   box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
-  border-radius: 5% 5% 5% 5%;
-}
-.jack {
-  display: block;
-  width: 100%;
+  border-radius: 1% 1% 1% 1%;
 }
 .card:hover {
   box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
@@ -341,4 +306,4 @@ td {
         text-align: center;
         vertical-align: middle;  
       }
-img {border-radius: 25px; padding: 1px}
+img {border-radius: 25px; padding: 5px}
