@@ -34,6 +34,7 @@ p  {
  }
 b { color: #05061a}
 
+.MAP {float:right}
 
 .item1 {grid-column: auto; padding: 0.1%;}
 .item2 {grid-column: auto; padding: 0.1%;}
@@ -249,4 +250,4 @@ td {
         text-align: center;
         vertical-align: middle;  
       }
-img {border-radius: 25px; padding: 5px 5px 5px 5px}
+img {float: center; border-radius: 25px; padding: 5px 5px 5px 5px}
