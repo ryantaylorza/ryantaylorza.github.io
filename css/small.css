@@ -1,33 +1,39 @@
 
-body {
-  font-family: 'Archivo Black', sans-serif;
+body {font-size: 10px;
+  font-family: sans-serif;
   margin: auto;
 }
 h1{
   font-size: 10px;
 }
 h2{
-  font-size: 8px;
-  margin: 5px;
+  font-size: 10px;
+  margin: 2px;
 }
 h3{
-  font-size: 6px;
+  font-size: 10px;
 }
 h4{
-  font-size: 6px;
+  font-size: 10px;
 }
 h4, p{
-  font-size: 6px;
-  margin: 5px;
+  font-size: 10px;
+  margin: 2px;
 }
 h5{
-  font-size: 6px;
+  font-size: 10px;
 }
+h6{
+  font-size: 10px;
+    
+}
+p { font-size: 10px}
+
 header, footer{
   background-color: #404e4d;
-  padding: 5px;
+  padding: 6px;
   text-align: center;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: sans-serif;
   color: #F4F6F6;
 }
 main{
@@ -37,37 +43,25 @@ main{
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1%;
 }
-h3{
-  background-color: #536564;
-  color: #F4F6F6;
-  padding: 5px;
-  margin-top: 0px;
-  border-radius: 6px 6px 6px 6px;
-}
 .design-princ{
   border: #536564 2px solid;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #F4F6F6;
 }
 .mobile-pic{
-  width: 95%;
+  width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: #536564 2px solid;
 }
 footer a:link {
+  font-size: 10px
   color:#F4F6F6;
 }
 footer a:visited {
+  font-size: 10px
   color: #F7D3B5;
-}
-h4{
-  background-color: #536564;
-  color: #F4F6F6;
-  padding: 5px;
-  margin-top: 0px;
-  border-radius: 6px 6px 6px 6px;
 }
 .photos{
   margin: 10px;
@@ -75,4 +69,19 @@ h4{
   flex-wrap: wrap;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1%;
+}
+img{ width: 50%}
+
+a:link {
+  cfont-size: 10px;
+}
+
+/* visited link */
+a:visited {
+  font-size: 10px
+}
+
+/* selected link */
+a:active {
+  font-size: 10px;
 }
