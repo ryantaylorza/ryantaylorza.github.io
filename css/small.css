@@ -1,39 +1,38 @@
 
-body {font-size: 10px;
-  font-family: sans-serif;
+body {
+  font-family: 'Archivo Black', sans-serif;
   margin: auto;
 }
 h1{
-  font-size: 10px;
+  font-size: 5px;
 }
 h2{
-  font-size: 10px;
-  margin: 2px;
+  font-size: 5px;
+   text-align: center;
 }
 h3{
-  font-size: 10px;
+  font-size: 5px;
+  background-color: #536564;
+  color: #F4F6F6;
+  padding: 5px;
+  margin-top: 0px;
+  border-radius: 6px 6px 6px 6px;
 }
 h4{
-  font-size: 10px;
-}
-h4, p{
-  font-size: 10px;
-  margin: 2px;
+  background-color: #536564;
+  color: #F4F6F6;
+  padding: 5px;
+  margin-top: 0px;
+  border-radius: 6px 6px 6px 6px;
 }
 h5{
-  font-size: 10px;
+  font-size: 5px;
 }
-h6{
-  font-size: 10px;
-    
-}
-p { font-size: 10px}
-
 header, footer{
   background-color: #404e4d;
-  padding: 6px;
+  padding: 5px;
   text-align: center;
-  font-family: sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   color: #F4F6F6;
 }
 main{
@@ -43,26 +42,27 @@ main{
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1%;
 }
+
+footer a:link {
+  color:#F4F6F6;
+}
+footer a:visited {
+  color: #F7D3B5;
+}
+
 .design-princ{
   border: #536564 2px solid;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #F4F6F6;
 }
 .mobile-pic{
-  width: 50%;
+  width: 95%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: #536564 2px solid;
 }
-footer a:link {
-  font-size: 10px
-  color:#F4F6F6;
-}
-footer a:visited {
-  font-size: 10px
-  color: #F7D3B5;
-}
+
 .photos{
   margin: 10px;
   display:flex;
@@ -70,18 +70,35 @@ footer a:visited {
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1%;
 }
-img{ width: 50%}
-
-a:link {
-  cfont-size: 10px;
+.centered2 {
+  font-size: 15px;
+}
+.navigation {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* visited link */
-a:visited {
-  font-size: 10px
+.navigation li:first-child {
+    display: block;
 }
 
-/* selected link */
-a:active {
-  font-size: 10px;
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+}
+
+.navigation a:hover {
+	background-color: #536564;
+}
+
+.navigation .active {
+    background-color: #536564;
 }

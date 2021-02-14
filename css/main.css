@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
-h2 {text-align: center}
 
 .s1{
   display: flex;
@@ -30,16 +29,10 @@ bdu {
   color: #0b9c4e;
   }
 p  {
-  font-family: sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   color: #05061a;
  }
 b { color: #05061a}
-
-h6 {font-size: 15px;
-  font-family: sans-serif;
-  color: #05061a; text-align: center;
- }
-button{align-items: center; justify-content: center;}
 
 .MAP {float:right}
 
@@ -55,8 +48,7 @@ button{align-items: center; justify-content: center;}
 .item10 {grid-column:auto; padding: 0.1%;}
 .item11 {grid-column:auto; padding: 0.1%;}
 
-.itema {
-  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+.itema {box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
   transition: 0.3s;
   width: 32%;
   border-radius: 5% 5% 5% 5%;
@@ -104,23 +96,23 @@ button{align-items: center; justify-content: center;}
 }
 /* unvisited link */
 a:link {
-  color: #34afff;
+  color: #0b9c4e;
 }
 
 /* visited link */
 a:visited {
-  color: DodgerBlue;
+  color: #0b9c4e;
   font-weight: bold;
 }
 
 /* mouse over link */
-a:hover {font-size: 20px;
+a:hover {
   color: lightblue;
 }
 
 /* selected link */
 a:active {
-  color: #34afff;
+  color: lightblue;
 }
 .second { 
 display: flex;
@@ -185,6 +177,7 @@ input[type=number] {
   padding-left: 2%;
   padding-right: 2%;
   border-radius: 2% 2% 2% 2%;
+}
 
 .s21{text-align: center;
 color: black;
@@ -207,4 +200,25 @@ td {
         text-align: center;
         vertical-align: middle;  
       }
-img {float: center; border-radius: 25px; padding: 5px 5px 5px 5px}
+img {position: relative; text-align: center; center; width:75% border-radius: 25px; padding: 5px 5px 5px 5px}
+
+/* Container holding the image and the text */
+
+/* Centered text */
+.picture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.summary{
+    top: 5%;
+    right: 20%;
+    width: 20%;
+    background-color: #0A5C9A;
+    padding: 1em;
+    color: red;
+    border-radius: 1%;
+    box-shadow: 1px 1px 5px rgb(44 44 44);
+    opacity: .6;
+}
