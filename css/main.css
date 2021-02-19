@@ -13,11 +13,7 @@
   color: black ;
 }
 
-.s2 { 
-  display: block;
-  Justify: space-evenly;
-  }
-{grid-column: 1;  width 15%; justify-content: left;}
+.s2 {display: block; Justify: space-evenly;}
 .s3{grid-column: 2;  width 15%; justify-content: center;}
 .s4{grid-column: 3;  width 15%; justify-content: right;}
 
@@ -83,7 +79,6 @@ b { color: #05061a}
   border-radius: 5% 5% 5% 5%;
     }
 
-.facebook /* Style all font awesome icons */
 .fa {
   color: lightblue;
   background: #05061a;
@@ -180,11 +175,6 @@ color: black;
 }
 .G18{align: center}
 
-.grid{display: block;
-width: 15%;
-justify: center;
-align: center;}
-
 table{
 display: table;
 width: 15%;
@@ -238,4 +228,22 @@ img {position: relative; text-align: center; center; width:75% border-radius: 25
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.project1{
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  border-radius: 25px;
+  background-color: #e6ffee;
+  padding-left: .25%;
+  padding-right: .25%
+
+
+img[data-src] {
+    filter: blur(5px);
+}
+
+img {
+    filter: blur(0px);
 }
