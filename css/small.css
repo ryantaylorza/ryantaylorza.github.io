@@ -102,3 +102,13 @@ footer a:visited {
 .navigation .active {
     background-color: #536564;
 }
+
+.Idaho-Grid{
+  margin: 10px;
+  display:grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows:minmax(100px, auto);
+  grid-gap: 1em;
+}
+

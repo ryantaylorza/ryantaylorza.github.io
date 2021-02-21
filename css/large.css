@@ -31,3 +31,21 @@ h5{
 .centered2 {
   font-size: 40px;
 }
+ */
+.Idaho-Grid{
+    display: grid;
+    gap: 0.5em;
+    padding: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+    justify-items: center;
+}
+#galleryHeader{
+    font-size: 3em;
+    /* margin-left: 40px; */
+    width: 95%;
+    margin: auto;
+    grid-column: 1/4;
+
+}

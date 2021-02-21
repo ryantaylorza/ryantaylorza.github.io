@@ -32,3 +32,12 @@ h5{
 .centered2 {
   font-size: 30px;
 }
+.Idaho-Grid {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  flex-wrap: wrap;
+  height: space-evenly;
+  width: space-evenly;
+  border-radius: 2% 2% 2% 2%;
+  justify-content: space-around;
+    }
