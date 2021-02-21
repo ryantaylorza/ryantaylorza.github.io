@@ -34,7 +34,7 @@ h5{
 }
 .Idaho-Grid {
   grid-template-columns: repeat(2, 1fr);
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   height: space-evenly;
   width: space-evenly;

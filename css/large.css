@@ -49,18 +49,3 @@ h5{
     grid-column: 1/4;
 
 }
-.One{
-grid-column: 1/2;
-}
-.Two{
-grid-column: 2/3;
-}
-.Three{
-grid-column: 3/4;
-}
-.Four{
-  grid-column: 1/2;
-}
-.Five{
-grid-column: 2/3;
-}
