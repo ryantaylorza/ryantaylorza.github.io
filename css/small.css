@@ -107,6 +107,9 @@ footer a:visited {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
