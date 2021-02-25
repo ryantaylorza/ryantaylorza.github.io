@@ -10,10 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/TableReport.css" />
-    <link href="/css/small.css" rel="stylesheet">
-    <link href="/css/medium.css" rel="stylesheet">
-    <link href="/css/large.css" rel="stylesheet">
-    <title>Table</title>
+     <title>Table</title>
   </head>
   <body>
     <header>
@@ -26,56 +23,55 @@
       </div>
     </header>
     <center>
-    <tableable>
+    <table>
       <caption>
         ACME Wildwest
       </caption>
-      <tablehead>
-        <tablea>
-          <tableb>Period</tableb>
-          <tableb>Sales</tableb>
-          <tableb>Sales Goal</tableb>
-        </tablea>
-      </tablehead>
-      <tablebody>
-        <tablea>
-          <tablec>August</tablec>
-          <tablec>$3,590</tablec>
-          <tablec>$4,000</tablec>
-        </tablea>
-        <tablea>
-          <tablec>September</tablec>
-          <tablec>$4,420</tablec>
-          <tablec>$5,000</tablec>
-        </tablea>
-        <tablea>
-          <tablec>October</tablec>
-          <tablec>$4,870</tablec>
-          <tablec>$5,000</tablec>
-        </tablea>
-        <tablea>
-          <tablec>November</tablec>
-          <tablec>$8,610</tablec>
-          <tablec id="novGoal">$7,500</tablec>
-        </tablea>
-        <tablea>
-          <tablec id="blackFriday">Black Friday</tablec>
-          <tablec id="fridaySales" colspan="2">$3,200</tablec>
-        </tablea>
-        <tablea>
-          <tablec>December</tablec>
-          <tablec>$6,820</tablec>
-          <tablec>$7,500</tablec>
-        </tablea>
-      </tablebody>
-      <tablefoot>
-        <tablea>
-          <tablec id="foot" colspan="3">Compiled 12.20.2020 by bRauls</tablec>
-        </tablea>
-      </tablefoot>
-    </tableable>
+      <thead>
+        <tr>
+          <th>Period</th>
+          <th>Sales</th>
+          <th>Sales Goal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>August</td>
+          <td>$3,590</td>
+          <td>$4,000</td>
+        </tr>
+        <tr>
+          <td>September</td>
+          <td>$4,420</td>
+          <td>$5,000</td>
+        </tr>
+        <tr>
+          <td>October</td>
+          <td>$4,870</td>
+          <td>$5,000</td>
+        </tr>
+        <tr>
+          <td>November</td>
+          <td>$8,610</td>
+          <td id="novGoal">$7,500</td>
+        </tr>
+        <tr>
+          <td id="blackFriday">Black Friday</td>
+          <td id="fridaySales" colspan="2">$3,200</td>
+        </tr>
+        <tr>
+          <td>December</td>
+          <td>$6,820</td>
+          <td>$7,500</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td id="foot" colspan="3">Compiled 12.20.2020 by bRauls</td>
+        </tr>
+      </tfoot>
+    </table>
     </center>
-    
     <footer>
       <div class="footer">
         &copy; 2021 - Ryan Taylor | Idaho / South Africa |<a
