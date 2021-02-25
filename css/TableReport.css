@@ -1,0 +1,119 @@
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #e7f0ed;
+}
+
+table, tableb, tablec {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 7px;
+    border: 1px solid #7fb9c2;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, caption {
+    box-shadow: 7px 9px 13px 2px rgb(135 151 178);
+}
+
+tablea:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+#foot {
+    text-align: center;
+    font-size: 11px;
+    background-color: #7fb9c2;
+    padding: 4px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+caption {
+    color: black;
+    background-color: #7fb9c2;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    display: table-caption;
+    text-align: -webkit-center;
+}
+
+tableb {
+    color: white;
+    background-color: #628ca6;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+tablea {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+#novGoal {
+    color: white;
+    background-color: #628ca6;
+}
+
+#fridaySales {
+    text-align: center;
+}
+
+#blackFriday {
+    font-style: italic;
+}
+tablehead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tablebody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.weather{
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: rgb(0, 39, 97);
+    margin-left: 40px;
+    font-size: .9rem;
+    text-align: right;
+}
+
+table {
+    margin-left: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #e7f0ed;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+
+
