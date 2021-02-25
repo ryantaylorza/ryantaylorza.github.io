@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/TableReport.css" />
+    <link href="/css/small.css" rel="stylesheet">
+    <link href="/css/medium.css" rel="stylesheet">
+    <link href="/css/large.css" rel="stylesheet">
+    <title>Table</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fwdd230_image_franklinOriginal%20(1).jpg?v=1613274321021" alt="PrestonAm" width="50%">
+                </picture>
+      <div class="headings">
+        <h1>Idaho Weather Watcher</h1>
+        <div class="weather">Your go to Weather Site</div>
+      </div>
+    </header>
+    <center>
+    <tableable>
+      <caption>
+        ACME Wildwest
+      </caption>
+      <tablehead>
+        <tablea>
+          <tableb>Period</tableb>
+          <tableb>Sales</tableb>
+          <tableb>Sales Goal</tableb>
+        </tablea>
+      </tablehead>
+      <tablebody>
+        <tablea>
+          <tablec>August</tablec>
+          <tablec>$3,590</tablec>
+          <tablec>$4,000</tablec>
+        </tablea>
+        <tablea>
+          <tablec>September</tablec>
+          <tablec>$4,420</tablec>
+          <tablec>$5,000</tablec>
+        </tablea>
+        <tablea>
+          <tablec>October</tablec>
+          <tablec>$4,870</tablec>
+          <tablec>$5,000</tablec>
+        </tablea>
+        <tablea>
+          <tablec>November</tablec>
+          <tablec>$8,610</tablec>
+          <tablec id="novGoal">$7,500</tablec>
+        </tablea>
+        <tablea>
+          <tablec id="blackFriday">Black Friday</tablec>
+          <tablec id="fridaySales" colspan="2">$3,200</tablec>
+        </tablea>
+        <tablea>
+          <tablec>December</tablec>
+          <tablec>$6,820</tablec>
+          <tablec>$7,500</tablec>
+        </tablea>
+      </tablebody>
+      <tablefoot>
+        <tablea>
+          <tablec id="foot" colspan="3">Compiled 12.20.2020 by bRauls</tablec>
+        </tablea>
+      </tablefoot>
+    </tableable>
+    </center>
+    
+    <footer>
+      <div class="footer">
+        &copy; 2021 - Ryan Taylor | Idaho / South Africa |<a
+          href="../index.html"
+          >Home</a
+        >|
+        <a href="https://www.byui.edu/online"
+          >BYUI Online Learning</a
+        >
+        <br />
+        Current Date:
+        <span id="currentDate"></span>
+      </div>
+    </footer>
+    <script src="js/toggle.js"></script>
+    <script src="js/date.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Architects Daughter", "Montserrat"],
+        },
+      });
+    </script>
+  </body>
+</html>
