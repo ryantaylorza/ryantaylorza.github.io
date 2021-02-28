@@ -27,13 +27,16 @@
         <center>
             <form method="post" action="#" class="grid">
             <p>
-        <fieldset>
+             <fieldset>
+          <br>
+      <h4>Please complete the form below to submit a Storm Report</h4>
           <fieldset>
             <lable>
         <legend>Do you have a weather storm to report ?<abbr title="This field is mandatory" aria-label="required1"></abbr></legend><br>
       </lable>
       <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
       <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+            
             <br>
           </fieldset>
             <fieldset>
@@ -42,23 +45,26 @@
               </lable>
               <input type="radio" required name="driver" id="r3" value="yes"><label for="r3">Yes</label>
       <input type="radio" required name="driver" id="r4" value="no"><label for="r4">No</label>
-        
-        <br>
+        <h5>
+              If yes please call 911 right away !
+            </h5>
           </fieldset>
-      <lable>Please complete the form below to continue with Storm report</lable>
-      <lable> Full Name: </lable>
-			<input type="text" name="fullname">
+          <fieldset>
+            <lable> Full Name: </lable>
+			<input type="text" name="fullname" placeholder="First, Last">
         <br>
       <label for="n1">How old are you?</label>
       <input type="number" min="12" max="120" step="1" id="n1" name="age" pattern="\d+">
-      <label>Cell or Telephone Number: 
+      <lable>Cell or Telephone Number: 
 			<input type="tel" name="phone" placeholder="###-###-####">
-		  </label>
+		  </lable>
         <br>
-		  <label>EMail Address:
-			<input type="email" name="email" placeholder="user@email.org"></label>
+		  <lable>Your Email Address:
+			<input type="email" name="email" placeholder="user@email.org"></lable>
         <br>
-        <label for="t1">Please select the type of storm<abbr title="This field is mandatory" aria-label="required"> * </abbr></label>
+          </fieldset>
+          <fieldset>
+            <label for="t1">Please select the type of storm<abbr title="This field is mandatory" aria-label="required"> * </abbr></label>
       <input type="text" id="t1" name="storm" list="l1" required
            pattern="[Hh]ail|[Ll]ightning|[Ss]now|[Rr]ain|[Ss]andstorm|[Tt]Tornado[Ww]indy">
       <datalist id="l1">
@@ -70,8 +76,10 @@
       <option>Tornado</option>
       <option>Windy</option>
       </datalist>
-    <label for="t2">How severe is the storm 1-10<abbr title="This field is mandatory" aria-label="required"> * </abbr></label>
-    <input type="number" min="1" max="10" step="1" id="Severity">
+     <label class="range" for="rating">Severeity Rating:<br><input type="range" id="rating" value="5" min="1" max="10" step="1" list="ls2" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+			<br>
+       <span id="ratingvalue">1-10</span>
+		</label>
      <br>
      <label for="t2">Please select your area<abbr title="This field is mandatory" aria-label="required"> * </abbr></label>
       <input type="text" id="t2" name="area" list="l2" required
@@ -86,6 +94,7 @@
   <label for="datemin">Enter a date DD/MM/YYYY:</label>
   <input type="date" id="datemin" name="datemin" min="16/06/2020">
           <br>
+          </fieldset>
     <button>Submit</button>
             </fieldset>
           </p>
