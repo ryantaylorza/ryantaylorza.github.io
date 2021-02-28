@@ -13,42 +13,55 @@
         <script src="js/scripts.js"></script>
     <link rel="favicon icon" href="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Ffavicon%20(3).ico?v=1612679528034">
     <script src="https://kit.fontawesome.com/7eb786be84.js" crossorigin="anonymous"></script>
-    <title>Your Weather Site</title>
+    <title>Your Storm Reporting Site</title>
 </head>
 <body onload="lastModified(); currentYear();">
 
     <header>
-        <img id="logo" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2FGoWeather.png?v=1612081065374" alt="Weather">
+        <img id="logo" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fdownload.jpeg?v=1614494224259" alt="Weather" height="25%">
         <div class="headings">
-          <h1 id="Weather">Your Weather Site</h1>
+          <h1 id="Weather">Your Storm Reporting Site</h1>
         </div>
+      
       <div>
-        <center><form>
-  <p>
-    <fieldset>
-      <legend>Do you have a weather storm to report ?<abbr title="This field is mandatory" aria-label="required"></abbr></legend>
-      <!-- While only one radio button in a same-named group can be selected at a time,
-           and therefore only one radio button in a same-named group having the "required"
-           attribute suffices in making a selection a requirement -->
+        <center>
+            <form method="post" action="#" class="grid">
+            <p>
+        <fieldset>
+          <fieldset>
+            <lable>
+        <legend>Do you have a weather storm to report ?<abbr title="This field is mandatory" aria-label="required1"></abbr></legend><br>
+      </lable>
       <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
       <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
-    </fieldset>
-  </p>
-  <p>
-    <label for="n1">How old are you?</label>
-    <!-- The pattern attribute can act as a fallback for browsers which
-         don't implement the number input type but support the pattern attribute.
-         Please note that browsers that support the pattern attribute will make it
-         fail silently when used with a number field.
-         Its usage here acts only as a fallback -->
-    <input type="number" min="12" max="120" step="1" id="n1" name="age"
-           pattern="\d+">
-  </p>
-  <p>
-    <label for="t1">What kind of storm do you want to report<abbr title="This field is mandatory" aria-label="required"> * </abbr></label>
-    <input type="text" id="t1" name="storm" list="l1" required
+            <br>
+          </fieldset>
+            <fieldset>
+          <lable>
+            <legend>Are you in danger ?<abbr title="This field is mandatory1" aria-label="required2"></abbr></legend><br>
+              </lable>
+              <input type="radio" required name="driver" id="r3" value="yes"><label for="r3">Yes</label>
+      <input type="radio" required name="driver" id="r4" value="no"><label for="r4">No</label>
+        
+        <br>
+          </fieldset>
+      <lable>Please complete the form below to continue with Storm report</lable>
+      <lable> Full Name: </lable>
+			<input type="text" name="fullname">
+        <br>
+      <label for="n1">How old are you?</label>
+      <input type="number" min="12" max="120" step="1" id="n1" name="age" pattern="\d+">
+      <label>Cell or Telephone Number: 
+			<input type="tel" name="phone" placeholder="###-###-####">
+		  </label>
+        <br>
+		  <label>EMail Address:
+			<input type="email" name="email" placeholder="user@email.org"></label>
+        <br>
+        <label for="t1">Please select the type of storm<abbr title="This field is mandatory" aria-label="required"> * </abbr></label>
+      <input type="text" id="t1" name="storm" list="l1" required
            pattern="[Hh]ail|[Ll]ightning|[Ss]now|[Rr]ain|[Ss]andstorm|[Tt]Tornado[Ww]indy">
-    <datalist id="l1">
+      <datalist id="l1">
       <option>Hail</option>
       <option>Lightning</option>
       <option>Snow</option>
@@ -56,38 +69,29 @@
       <option>Sand Storm</option>
       <option>Tornado</option>
       <option>Windy</option>
-    </datalist>
-  </p>
-          <p>
-    <label for="t2">How severe is the storm ?<abbr title="This field is mandatory" aria-label="required"> * </abbr></label>
-    <input type="text" id="t2" name="severity" list="l2" required
-           pattern="[Dd]isaster|[Ss]evere|[Dd]amaging|[Ii]inprogress|[Mm]ild|[Tt]hreatening">
-    <datalist id="l2">
-      <option>Disaster</option>
-      <option>Severe</option>
-      <option>Damaging</option>
-      <option>In Progress</option>
-      <option>Mild</option>
-      <option>Threatening</option>
-    </datalist>
-  </p>
-  <p>
-   <form>
-  <label for="mail">I would like you to provide me with an e-mail address:</label>
-  <input type="email" id="mail" name="mail">
-  <button>Submit</button>
-  </form>
-  </p>
-  <p>
-    <label for="t3">Leave a short message</label>
+      </datalist>
+    <label for="t2">How severe is the storm 1-10<abbr title="This field is mandatory" aria-label="required"> * </abbr></label>
+    <input type="number" min="1" max="10" step="1" id="Severity">
+     <br>
+     <label for="t2">Please select your area<abbr title="This field is mandatory" aria-label="required"> * </abbr></label>
+      <input type="text" id="t2" name="area" list="l2" required
+             pattern="[Pp]reston|[Ss]oda Spring|[Ff]isher Haven">
+      <datalist id="l2">
+      <option>Preston</option>
+      <option>Soda Springs</option>
+      <option>Fisher Haven</option>
+      </datalist>
+          <label for="t3">Leave a short message</label>
     <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
-  </p>
-  <p>
+  <label for="datemin">Enter a date DD/MM/YYYY:</label>
+  <input type="date" id="datemin" name="datemin" min="16/06/2020">
+          <br>
     <button>Submit</button>
-  </p>
-</form>
-<div id="selected"></div>
-  </center></div>
+            </fieldset>
+          </p>
+          </form>
+        </center>
+      </div>
 <nav><h3><div class="container">
             <div class="item1"><a href="/index.html">Home</a></div>
             <div class="item2"><a href="Weather.html">Weather</a></div>
@@ -102,59 +106,7 @@
     </header>
      
     <main>
-        <h2 class="Title">Preston Idaho</h2>
-
-        <section id="Main">
-            <img id="MainPhoto" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2FPrestonBackground.jfif?v=1612081683341" alt="Sunset">
-            <div class="weatherSummary">
-                <h3>Weather Summary</h3>
-                <hr>
-                <p>Currently: Snowy</p>
-                <p>High: 32&#176; F</p>
-                <p>Wind Chill: 12&#176; F</p>
-                <p>Humidity: 63%</p>
-                <p>Wind Speed: 5 mph</p>
-            </div>
-        </section>
-
-        <section class="Weather_Hide">
-            <h3>7 Day Forecast</h3>
-            <table class="forecast">
-                <tr>
-                    <th>Sun</th>
-                    <th>Mon</th>
-                    <th>Tues</th>
-                    <th>Wed</th>
-                    <th>Thurs</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                </tr>
-                <tr>
-                    <td><i class="fa fa-sun"></i><br>76&#176; F</td>
-                    <td><i class="fa fa-cloud-sun-rain"></i><br>84&#176; F</td>
-                    <td><i class="fa fa-cloud-sun" ></i><br>72&#176; F</td>
-                    <td><i class="fa fa-sun"></i><br>92&#176; F</td>
-                    <td><i class="fa fa-cloud-sun-rain"></i><br>64&#176; F</td>
-                  <td><i class="fa fa-cloud-sun-rain"></i><br>84&#176; F</td>
-                  <td><i class="fa fa-sun"></i><br>64&#176; F</td>
-                </tr>
-            </table>
-        </section>
-
-        <section class="Paragraph">
-            <img id="MAP" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fb0b9043a-662b-4273-b340-dbac5ec40596.jpg?v=1612681673699" alt="weatherc">
-             <div class="trim">
-                                Mother Nature is slipping into winter hibernation mode Tuesday. After several days of active weather, big changes are afoot for the U.S. Tuesday.<br />
-                <br />
-          A strong Canadian high pressure will ensure much of the West, Central and Eastern U.S. stay dry. Mittens, scarves and warm hats will be needed to stay warm with highs in the teens, 20s and 30s from the Mountain West into the central and northern Plains, Midwest, Ohio Valley, Mid-Atlantic and Northeast.<br />
-      <br />
-        Only a few hiccup spots will interrupt the quiet weather pattern Tuesday. Central and southern Florida will have to deal with a few showers. Meanwhile, a low pressure careening towards central California will turn a sunny morning into a soggy afternoon. The moisture lifting into the colder central Sierra will allow snow to develop as the afternoon unfolds, with several inches likely by the end of the day. There could also be a few flurries in the central Appalachians Tuesday evening but no accumulation is expected.<br />
-      <br />
-        The Northwest Coast will slide into the 40s Tuesday afternoon with 50s and 60s common in Los Angeles, Phoenix, Dallas, New Orleans and Jacksonville, Fla. Miami will be the nation&rsquo;s warmest spot with highs in the 80s.
-                            </div>
-                <a href="view-source:https://www.weatherbug.com/news/Today-s-Weather-Outlook">View Full Article</a>
-        </section>
-
+        
         <section class="contact">
       
             <div class="contact-text">
