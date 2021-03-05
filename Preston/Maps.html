@@ -1,30 +1,76 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Display map navigation controls</title>
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
-<style>
-	body { margin: 0; padding: 0; }
-	#map { position: absolute; top: 0; bottom: 0; width: 100%; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design Principles">
+    <link href="/css/normalize.css" rel="stylesheet">
+        <link href="/css/maps.css" rel="stylesheet">
+        <link href="/css/small.css" rel="stylesheet">
+        <link href="/css/medium.css" rel="stylesheet">
+        <link href="/css/large.css" rel="stylesheet">
+        <link href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yellowtail&display=swap"  rel="stylesheet" >
+        <script src="js/scripts.js"></script>
+    <link rel="favicon icon" href="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Ffavicon%20(3).ico?v=1612679528034">
+    <script src="https://kit.fontawesome.com/7eb786be84.js" crossorigin="anonymous"></script>
+    <title>Your Storm Reporting Site</title>
 </head>
-<body>
-<div id="map"></div>
-<script>
-	mapboxgl.accessToken = 'pk.eyJ1IjoicnlhbnRheWxvcnphIiwiYSI6ImNrbDA4eGV2bjA1dDUydm9lYXA1Z3pkNnkifQ.PkgCWlHkkqBu3MOdh0eC3Q';
+<body onload="lastModified(); currentYear();">
+
+    <header>
+        <img id="logo" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fdownload.jpeg?v=1614494224259" alt="Weather" height="25%">
+        <div class="headings">
+          <h1 id="Weather">Your Storm Reporting Site</h1>
+        </div>
+            <nav><h3><div class="container">
+            <div class="item1"><a href="/index.html">Home</a></div>
+            <div class="item2"><a href="/Preston/Weather.html">Weather</a></div>
+            <div class="item3"><a href="/Preston/Towns.html">Neighboring Towns</a></div>
+            <div class="item4"><a href="/Preston/LiveRadar.html">Live Radar</a></div>
+            <div class="item5"><a href="/Preston/Maps.html">Maps</a></div>
+            <div class="item6"><a href="/Preston/News.html">News</a></div>
+            <div class="item7"><a href="/Preston/Photos.html">Photos</a></div>
+            <div class="item8"><a href="/Preston/AboutPreston.html">About Preston</a></div>
+            <div class="item9"><a href="/Preston/Roads.html">Road Camera</a></div>
+       </div></h3></nav>
+    </header>
+     
+    <main>
+        
+        <section class="contact">
+      
+          
+  <div class="maps">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
 var map = new mapboxgl.Map({
-container: 'map', // container id
-style: 'mapbox://styles/mapbox/streets-v11',
-center: [-74.5, 40], // starting position
-zoom: 9 // starting zoom
-});
- 
-// Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl());
-</script>
- 
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-74.50, 40],
+  zoom: 9
+})
+      </div>
+          <div class="contact-text">
+                <h4>24-7 Weather</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 30 N 1st E</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p><i class="fas fa-phone"></i> (208) 999-9999</p>
+                <p><i class="fas fa-envelope"></i> contact@yourwather.com</p>
+                <br>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a id="home" href="../index.html">Home</a>
+        <div id="cYear"></div>
+        <div id="mod"></div>
+    </footer>
 </body>
 </html>
