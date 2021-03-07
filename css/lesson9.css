@@ -139,7 +139,7 @@ main {
 }
 
 .towns section {
-    background-color: #E1E5F2;
+    background-color: #536564;
     padding: 0px;
     border: 1px solid #1F7A8C;
     box-shadow: 0 2px 15px gray;
@@ -153,6 +153,7 @@ main {
 
 .towns h4 {
     font-style: italic;
+    color: white;
 }
 
 main article {
