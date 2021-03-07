@@ -2,6 +2,9 @@ body {
     font-size: 16px;
     font-family: 'Scope One', serif;
 }
+p {
+    color: white;
+}
 
 header {
     display: grid;
