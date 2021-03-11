@@ -18,6 +18,14 @@ function currentDate() {
 //town data
 const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
+var city = { 
+  key:value, 
+  preston: "5604473",
+  sodasprings: "5607916",
+           
+  
+}
+
 fetch(requestURL)
     .then(function(response) {
         return response.json();
@@ -55,5 +63,6 @@ fetch(requestURL)
 
 
 
-        }
-    })
+        }})
+  
+  http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=3c41bb41948182dbc7b385be98a63b58
