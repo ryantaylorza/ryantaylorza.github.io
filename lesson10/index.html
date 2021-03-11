@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <link rel="shortcut icon" href="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Ffavicon.ico?v=1612332915063" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lesson 9 for Ryan Taylor in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <link href="/css/lesson10.css" rel="stylesheet">
+        <link href="/css/lesson10large.css" rel="stylesheet">
+        <link href="/css/lesson10medium.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yellowtail&display=swap" rel="stylesheet">
+        <script src="/lesson10/main.js"></script>
+    <title>Preston.com | Your Weather HQ</title>
+    </head>
+    
+	<body onload="currentDate();">
+    <div id="Banner">
+        <script src="/lesson10/script.js"></script>
+    </div>
+    <header>
+        <picture class="logo">
+            <img class="logo_img" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fpexels-rachel-claire-4992636.jpg?v=1613717263989" width="100%" alt="The Hill">
+        </picture>
+        <h1 class="title">The Hill Weather</h1>
+      <br>
+    </header>
+    <nav>
+        <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="/lesson10/index.html">Home</a></li>
+                    <li class="active"><a href="/lesson10/PrestonTown.html">Preston</a></li>
+                    <li><a href="/lesson10/SodaSprings.html">Soda Springs</a></li>
+                    <li><a href="/lesson10/FisherHaven.html">Fish Haven</a></li>
+                    <li><a href="/lesson10/StormCenter.html">Storm Center</a></li>
+                    <li><a href="/lesson10/Gallery.html">Gallery</a></li>
+                </ul>
+     </nav>
+        <main>
+            <h2>Home</h2>
+            <div class="cards"></div>
+        
+        <section class="town-data">
+            <div class="towns">
+            </div>
+        </section>
+          <section>
+          <div id="wiremaps"><center>
+            <h2><a href="/lesson10/wiremap.html">Wireframes</a></h2>        
+          </center></div>
+          </section>
+        
+    </main>
+    <footer>
+      <div><center>
+        <h2>Preston Map</h2>
+      <picture class="map">
+        <img src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fpreston.jpg?v=1615102015075" width="65%" alt="GoogleMaps of Preston, ID">
+        </picture></center>
+      </div>
+      <div>
+        <p>&copy; 2021 | Ryan Taylor | Idaho | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
+        <p class="date">
+            Current Date: <span id="currentDate"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="/lesson10/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Scope One', 'Trocchi'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
