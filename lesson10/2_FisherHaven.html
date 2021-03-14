@@ -1,0 +1,116 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design Principles">
+    <link href="/css/normalize.css" rel="stylesheet">
+        <link href="/css/lesson10/normalize.css" rel="stylesheet">
+        <link href="/css/lesson10/small.css" rel="stylesheet">
+        <link href="/css/lesson10/medium.css" rel="stylesheet">
+        <link href="/css/lesson10/large.css" rel="stylesheet">
+        <link href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yellowtail&display=swap"  rel="stylesheet" >
+        <script src="js/scripts.js"></script>
+    <link rel="shortcut icon" href="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Ffavicon.ico?v=1612332915063" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7eb786be84.js" crossorigin="anonymous"></script>
+    <title>Your Weather Site</title>
+</head>
+<header>
+  <body onload="lastModified(); currentYear();">
+
+     <div class="container2">
+       <source media="(max-width: 500px)" class="bottom-left" p="small"> 
+       <source media="(max-width: 700px)" class="bottom-left" p="medium">
+       <div class="centered2">Preston</div>
+            <picture>
+                <source media="(max-width: 500px)" srcset="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fwdd230_image_franklinOriginal%20(1).jpg?v=1613274321021" height="50%" width="50%">
+                <source media="(max-width: 700px)" srcset="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fwdd230_image_franklinOriginal%20(1).jpg?v=1613274321021" height="50%" width="50%">
+                <img src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fwdd230_image_franklinOriginal%20(1).jpg?v=1613274321021" alt="PrestonAm" width="50%">
+                <div class="summary2">
+                <p id="Temp">29 F</p> 
+                <p id="Wind">13 MPH</p> 
+                <div id="output"> </div>
+                <script src="/windchill.js"></script>
+            </div>
+       </picture>
+    </div>
+  </body>
+<nav><h3><div class="container">
+            <div class="item1"><a href="/index.html">Home</a></div>
+            <div class="item2"><a href="Weather.html">Weather</a></div>
+            <div class="item3"><a href="Towns.html">Neighboring Towns</a></div>
+            <div class="item4"><a href="LiveRadar.html">Live Radar</a></div>
+            <div class="item5"><a href="Maps.html">Maps</a></div>
+            <div class="item6"><a href="News.html">News</a></div>
+            <div class="item7"><a href="Photos.html">Photos</a></div>
+            <div class="item8"><a href="AboutPreston.html">About Preston</a></div>
+            <div class="item9"><a href="Roads.html">Road Camera</a></div>
+       </div></h3></nav>
+    </header>
+     
+    <main>
+
+        <section class="Weather_Hide">
+            <h3>7 Day Forecast</h3>
+            <table class="forecast">
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tues</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-sun"></i><br>76&#176; F</td>
+                    <td><i class="fa fa-cloud-sun-rain"></i><br>84&#176; F</td>
+                    <td><i class="fa fa-cloud-sun" ></i><br>72&#176; F</td>
+                    <td><i class="fa fa-sun"></i><br>92&#176; F</td>
+                    <td><i class="fa fa-cloud-sun-rain"></i><br>64&#176; F</td>
+                  <td><i class="fa fa-cloud-sun-rain"></i><br>84&#176; F</td>
+                  <td><i class="fa fa-sun"></i><br>64&#176; F</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="Paragraph">
+            <img id="MAP" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fb0b9043a-662b-4273-b340-dbac5ec40596.jpg?v=1612681673699" alt="weatherc">
+             <div class="trim">
+                                Mother Nature is slipping into winter hibernation mode Tuesday. After several days of active weather, big changes are afoot for the U.S. Tuesday.<br />
+                <br />
+          A strong Canadian high pressure will ensure much of the West, Central and Eastern U.S. stay dry. Mittens, scarves and warm hats will be needed to stay warm with highs in the teens, 20s and 30s from the Mountain West into the central and northern Plains, Midwest, Ohio Valley, Mid-Atlantic and Northeast.<br />
+      <br />
+        Only a few hiccup spots will interrupt the quiet weather pattern Tuesday. Central and southern Florida will have to deal with a few showers. Meanwhile, a low pressure careening towards central California will turn a sunny morning into a soggy afternoon. The moisture lifting into the colder central Sierra will allow snow to develop as the afternoon unfolds, with several inches likely by the end of the day. There could also be a few flurries in the central Appalachians Tuesday evening but no accumulation is expected.<br />
+      <br />
+        The Northwest Coast will slide into the 40s Tuesday afternoon with 50s and 60s common in Los Angeles, Phoenix, Dallas, New Orleans and Jacksonville, Fla. Miami will be the nation&rsquo;s warmest spot with highs in the 80s.
+                            </div>
+                <a href="view-source:https://www.weatherbug.com/news/Today-s-Weather-Outlook">View Full Article</a>
+        </section>
+
+        <section class="contact">
+      
+            <div class="contact-text">
+                <h4>24-7 Weather</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 30 N 1st E</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p><i class="fas fa-phone"></i> (208) 999-9999</p>
+                <p><i class="fas fa-envelope"></i> contact@yourwather.com</p>
+                <br>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a id="home" href="../index.html">Home</a>
+        <div id="cYear"></div>
+        <div id="mod"></div>
+    </footer>
+  </html>

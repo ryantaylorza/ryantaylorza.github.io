@@ -12,19 +12,11 @@ function currentDate() {
         month: "long",
         year: "numeric"
     };
-    document.getElementById("currentDate").textContent = todaysDate.toLocaleDateString("en-us", options);
+    document.getElementById("currentDate").textContent = todaysDate.toLocaleDateString('en-us', options);
 }
 
 //town data
-const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-
-var city = { 
-  key:value, 
-  preston: "5604473",
-  sodasprings: "5607916",
-           
-  
-}
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
     .then(function(response) {
@@ -32,25 +24,24 @@ fetch(requestURL)
     })
     .then(function(jsonObject) {
         console.table(jsonObject);
-        const towns = jsonObject["towns"];
+        const towns = jsonObject['towns'];
         const townsA = [5, 1, 6]
         for (let i = 0; i < townsA.length; i++) {
-            let card = document.createElement("section");
-            let h2 = document.createElement("h2");
-            let h4 = document.createElement("h4");
-            let h3_1 = document.createElement("p");
-            let h3_2 = document.createElement("p");
-            let h3_3 = document.createElement("p");
-            let img = document.createElement("img");
+            let card = document.createElement('section');
+            let h2 = document.createElement('h2');
+            let h4 = document.createElement('h4');
+            let h3_1 = document.createElement('p');
+            let h3_2 = document.createElement('p');
+            let h3_3 = document.createElement('p');
+            let img = document.createElement('img');
 
             h2.textContent = towns[townsA[i]].name;
-            h4.textContent = "" + towns[townsA[i]].motto + "";
-            h3_1.textContent = "Year Founded: " + towns[townsA[i]].yearFounded;
-            h3_2.textContent = "Population: " + towns[townsA[i]].currentPopulation;
-            h3_3.textContent = "Annual Rainfall: " + towns[townsA[i]].averageRainfall + "";
-            img.setAttribute("src", "images/" + towns[townsA[i]].photo);
-            img.setAttribute("alt", towns[townsA[i]].name + "photo");
-          
+            h4.textContent = '"' + towns[townsA[i]].motto + '"';
+            h3_1.textContent = 'Year Founded: ' + towns[townsA[i]].yearFounded;
+            h3_2.textContent = 'Population: ' + towns[townsA[i]].currentPopulation;
+            h3_3.textContent = 'Annual Rainfall: ' + towns[townsA[i]].averageRainfall + '"';
+            img.setAttribute('src', 'images/' + towns[townsA[i]].photo);
+            img.setAttribute('alt', towns[townsA[i]].name + 'photo');
 
             card.appendChild(h2);
             card.appendChild(img);
@@ -59,10 +50,9 @@ fetch(requestURL)
             card.appendChild(h3_2);
             card.appendChild(h3_3);
 
-            document.querySelector("div.towns").appendChild(card);
+            document.querySelector('div.towns').appendChild(card);
 
 
 
-        }})
-  
-  http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=3c41bb41948182dbc7b385be98a63b58
+        }
+    });

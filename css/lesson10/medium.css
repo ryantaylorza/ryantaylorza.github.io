@@ -1,0 +1,139 @@
+@media only screen and (min-width: 33.5em){
+  }
+h1{
+  font-size: 25px;
+}
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 15px;
+}
+h4, p{
+  font-size: 20px;
+  margin-left: 5px;
+}
+h5{
+  font-size: 20px;
+}
+  main{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.photos {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  flex-wrap: wrap;
+  height: space-evenly;
+  width: space-evenly;
+  border-radius: 2% 2% 2% 2%;
+  justify-content: space-around;
+    }
+.centered2 {
+  font-size: 30px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, (1fr 1fr));
+  grid-gap: 1rem;
+}
+
+@media only screen and (min-width: 37.5em)
+.weatherSummary {
+    position: absolute;
+    top: 22em;
+    left: 8em;
+    box-shadow: 0 0 30px #1f7a8c;
+}
+ }
+    .weatherSummary {
+        position: absolute;
+        top: 22em;
+        left: 8em;
+        box-shadow: 0 0 30px #1F7A8C;
+    }
+    .fiveDayForcast {
+        display: block;
+        margin: 0 auto;
+    }
+@media only screen and (min-width: 37.5em) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        margin-left: 20px;
+    }
+    nav ul {
+        display: flex;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .logo_img {
+        max-width: 50%;
+        margin: 1em 0 0 .7em;
+    }
+    .title {
+        margin-bottom: -4em;
+    }
+    .heroImg {
+        max-width: 90%;
+        margin: 0 0 0 .6rem;
+        position: relative;
+    }
+    .center {
+        text-align: center;
+    }
+    .temp {
+        text-align: center;
+    }
+    .towns section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .towns section img {
+        grid-column: 2/3;
+        grid-row: 1/6;
+        margin: 20px 20px 20px 20px;
+    }
+    .towns section:nth-child(2n) img {
+        grid-column: 1/2;
+    }
+    .towns section:nth-child(2n) h2 .towns section:nth-child(2n) h3 .towns section:nth-child(2n) h4 {
+        grid-column: 2/3;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4fr 1fr;
+    }
+    .map {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0 3em 0 3em;
+    }
+    .contactInfo {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0 3em 0 3em;
+    }
+    .date {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+}
