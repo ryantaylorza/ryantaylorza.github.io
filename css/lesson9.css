@@ -2,6 +2,9 @@ body {
     font-size: 16px;
     font-family: 'Scope One', serif;
 }
+p {
+    color: white;
+}
 
 header {
     display: grid;
@@ -96,7 +99,7 @@ h1 {
 }
 
 h2 {
-    color: #1F7A8C;
+    color: white;
     margin-left: 10px;
 }
 
@@ -139,8 +142,7 @@ main {
 }
 
 .towns section {
-    background-color: #E1E5F2;
-    padding: 1px;
+
     border: 1px solid #1F7A8C;
     box-shadow: 0 2px 15px gray;
 }
@@ -153,6 +155,7 @@ main {
 
 .towns h4 {
     font-style: italic;
+    color: white;
 }
 
 main article {
