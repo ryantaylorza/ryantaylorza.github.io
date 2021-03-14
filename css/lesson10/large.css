@@ -1,0 +1,90 @@
+@media only screen and (min-width: 48.9em){
+  }
+h1{
+  font-size: 35px;
+}
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 25px;
+}
+h4, p{
+  font-size: 20px;
+}
+h5{
+  font-size: 15px;
+}
+  main{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  height: space-evenly;
+  width: space-evenly;
+  grid-column: auto;
+  border-radius: 2% 2% 2% 2%;
+  justify-content: space-around;
+    }
+.centered2 {
+  font-size: 40px;
+}
+ */
+.container {
+  display: grid;
+   grid-template-columns: repeat(auto-fill, 1fr 1fr 1fr));
+   grid-gap: 1rem;
+}
+ .sheet {
+        letter-spacing: 1.5pt;
+        font-size: 2rem;
+        margin-left: 17px;
+        margin-top: -20px;
+}
+.weatherSummary {
+        top: 30em;
+        left: 15em;
+}
+@media only screen and (min-width: 60em) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5em;
+        margin-left: 20px;
+    }
+    nav a {
+        font-size: 1.1rem;
+    }
+    .logo_img {
+        max-width: 40%;
+        margin: 1em 0 0 1.8em;
+    }
+    .title {
+        margin-bottom: -4em;
+    }
+    .motto {
+        margin-top: -1em;
+    }
+    .heroImg {
+        max-width: 90%;
+        margin: 0 0 0 1.2rem;
+    }
+    .towns {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .towns section {
+        display: block;
+    }
+    .towns section img {
+        margin: 2px;
+    }
+    .map {
+        margin: 0 5em 0 5em;
+    }
+    .contactInfo {
+        margin: 0 5em 0 5em;
+    }
+}
