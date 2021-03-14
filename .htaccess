@@ -1,0 +1,13 @@
+AuthUserFile /usr/local/etc/.htpasswd
+AuthName "Name of Secure Area"
+AuthType Basic
+<Limit GET POST>
+require user ryantaylor
+require user laurentaylor
+</Limit>
+
+
+order allow,deny
+deny from 111.22.3.4
+deny from 789.56.4.
+allow from all
