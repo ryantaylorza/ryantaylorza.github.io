@@ -1,106 +1,81 @@
-<html>
-  <body>
-   <head>
-     <link rel="shortcut icon" href="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Ffavicon.ico?v=1612332915063" type="image/x-icon">
-    <title>Preston Idaho</title>
-    <meta charset="utf-8">
-        <link href="/css/lesson10/normalize.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <link rel="shortcut icon" href="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Ffavicon.ico?v=1612332915063" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lesson 10 for Ryan Taylor in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
         <link href="/css/lesson10/small.css" rel="stylesheet">
-        <link href="/css/lesson10/medium.css" rel="stylesheet">
         <link href="/css/lesson10/large.css" rel="stylesheet">
-        <link href="https://fonts.gstatic.com" rel="preconnect">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yellowtail&display=swap"  rel="stylesheet" >
-        <header>
-	  <div class="container2">
-  <img src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fwdd230_image_franklinOriginal%20(1).jpg?v=1613274321021" alt="Preston" width="50%">
-  <div class="centered2">Preston</div>
-</div>
-	</header>
-     <nav><h3><div class="container">
-            <div class="item1"><a href="0_index.html">Home</a></div>
-            <div class="item2"><a href="1_PrestonTown.html">Preston</a></div>
-            <div class="item3"><a href="2_FisherHaven.html">Fisher Haven</a></div>
-            <div class="item4"><a href="3_SodaSprings.html">Soda Springs</a></div>
-            <div class="item5"><a href="4_Gallery.html">Photos</a></div>
-            <div class="item6"><a href="5_StormCenter.html">Storm Center</a></div>
-            <div class="item7"><a href="6_Prophets.html">Prophets</a></div>
-            <div class="item8"><a href="7_Maps.html">Maps</a></div>
-            <div class="item9"><a href="8_Roads.html">Roads</a></div>
-            <div class="item10"><a href="90_LiveRadar.html">Live Radar</a></div>
-            <div class="item11"><a href="99_wiremap.html">Wiremap</a></div>
-            <div class="item12"><a href="/index.html">Ryan Taylor</a></div>
-       </div></h3></nav>
-       <body>
-         <center>
-            <div class="photos">
-            <div class="itema"><a href="/images/GoWeather">
-               <img src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2FPrestonBackground.jfif?v=1612081683341" align="center" alt="Picture1" width="95%">
-               <h4>Weather</h4></a></div>
-            <div class="itemb"><a href="activities.html">
-              <img src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2FPreston2Swim.jfif?v=1612081691563" align="center" alt="Picture2" width="95%" >
-              <h4>Activities</h4></a></div>
-            <div class="itemc"><a href="attractions.html">
-              <img src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2FPreston3.jpg?v=1612081687493" align="center" alt="Picture3" width="95%" >
-              <h4>Attractions</h4></a></div>
+        <link href="/css/lesson10/medium.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yellowtail&display=swap" rel="stylesheet">
+        <script src="/lesson10/main.js"></script>
+    <title>Preston.com | Your Weather HQ</title>
+    </head>
+    
+	<body onload="currentDate();">
+    <div id="Banner">
+        <script src="/lesson10/script.js"></script>
+    </div>
+    <header>
+        <picture class="logo">
+            <img class="logo_img" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fpexels-rachel-claire-4992636.jpg?v=1613717263989" width="100%" alt="The Hill">
+        </picture>
+        <h1 class="title">Rustican Weather</h1>
+      <br>
+    </header>
+    <nav>
+        <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="/lesson10/0_index.html">Home</a></li>
+                    <li class="active"><a href="/lesson10/1_PrestonTown.html">Preston</a></li>
+                    <li><a href="/lesson10/3_SodaSprings.html">Soda Springs</a></li>
+                    <li><a href="/lesson10/2_FisherHaven.html">Fish Haven</a></li>
+                    <li><a href="/lesson10/5_StormCenter.html">Storm Center</a></li>
+                    <li><a href="/lesson10/4_Gallery.html">Gallery</a></li>
+                </ul>
+     </nav>
+        <main>
+            <h2>Home</h2>
+            <div class="cards"></div>
+        
+        <section class="town-data">
+            <div class="towns">
             </div>
-           <div class="weatherSummary">
-            <h3>Weather Summary</h3>
-            <p>Current Temperature: <span id="current-temp"></span>&deg; F</p>
-            <p>Humidity: <span id="humidity"></span>%</p>
-            <p>Wind Speed: <span id="wind-speed"></span>mph</p>
-            <p>Wind Chill: <span id="windChill"></span>&#176; F</p>
-        </div>
-        <div class="fiveDayForcast">
-            <h3 class="center">Five Day Forecast</h3>
-            <table class="forecastTable">
-                <tr>
-                    <th>
-                        <div id="fiveDay1"></div>
-                    </th>
-                    <th>
-                        <div id="fiveDay2"></div>
-                    </th>
-                    <th>
-                        <div id="fiveDay3"></div>
-                    </th>
-                    <th>
-                        <div id="fiveDay4"></div>
-                    </th>
-                    <th>
-                        <div id="fiveDay5"></div>
-                    </th>
-                </tr>
-                <tr>
-                    <td><img id="forecastIcon1"><br><span id="forecastTemp1"></span>&#176; F</td>
-                    <td><img id="forecastIcon2"><br><span id="forecastTemp2"></span>&#176; F</td>
-                    <td><img id="forecastIcon3"><br><span id="forecastTemp3"></span>&#176; F</td>
-                    <td><img id="forecastIcon4"><br><span id="forecastTemp4"></span>&#176; F</td>
-                    <td><img id="forecastIcon5"><br><span id="forecastTemp5"></span>&#176; F</td>
-                </tr>
-            </table>
-        </div>
-         </center>
-        </body>
-  </head>
-    <body>
-    <div>
-      <center>
-      <h2>
-        <b>
-          <a href="Photos.html">Take a journey</a>
-         </b>
-        </h2>
-        <h6>&copy 2019 - All items are property of Preston Idaho and are subject to copyright</h6>
-      </center>
-       <footer>
-      <center3>
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Add font awesome icons -->
-<a href="https://www.facebook.com/prestonidaho/" class="fa fa-facebook"></a>
-      </center3></footer>
+        </section>
+          <section>
+          <div id="wiremaps"><center>
+            <h2><a href="/lesson10/99_wiremap.html">Wireframes</a></h2>        
+          </center></div>
+          </section>
+        
+    </main>
+    <footer>
+      <div><center>
+        <h2>Preston Map</h2>
+      <picture class="map">
+        <img src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fpreston.jpg?v=1615102015075" width="65%" alt="GoogleMaps of Preston, ID">
+        </picture></center>
       </div>
-      </body>
-    </body>
+      <div>
+        <p>&copy; 2021 | Ryan Taylor | Idaho | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
+        <p class="date">
+            Current Date: <span id="currentDate"></span>
+        </p>
+      </div>
+    </footer>
+    <script src="/lesson10/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Scope One', 'Trocchi'
+                ]
+            }
+        });
+    </script>
+</body>
+
 </html>
