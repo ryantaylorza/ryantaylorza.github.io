@@ -20,7 +20,7 @@ footer {
 }
 
 footer {
-    max-width: 100%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -140,13 +140,13 @@ main {
 
 .towns section {
     background-color: #E1E5F2;
-    padding: 0px;
+    padding: 1px;
     border: 1px solid #1F7A8C;
     box-shadow: 0 2px 15px gray;
 }
 
 .towns img {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
     box-shadow: 0 2px 15px gray;
 }
