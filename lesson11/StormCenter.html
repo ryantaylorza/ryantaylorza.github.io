@@ -1,0 +1,118 @@
+
+<html lang="en-us">
+	<head>
+    <link rel="shortcut icon" href="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Ffavicon.ico?v=1612332915063" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lesson 11 for Ryan Taylor in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="/css/large.css" rel="stylesheet">
+        <link href="/css/medium.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yellowtail&display=swap" rel="stylesheet">
+        <script src="/lesson11/main.js"></script>
+    <title>Preston.com | Your Weather HQ</title>
+    </head>
+    
+	<body onload="currentDate();">
+    <div id="Banner">
+        <script src="/lesson11/script.js"></script>
+    </div>
+    <header>
+        <picture class="logo">
+            <img class="logo_img" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fpexels-rachel-claire-4992636.jpg?v=1613717263989" width="100%" alt="The Hill">
+        </picture>
+        <h1 class="title">Rustican Weather</h1>
+      <br>
+    </header>
+    <nav>
+        <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="/lesson11/index.html">Home</a></li>
+                    <li><a href="/lesson11/PrestonTown.html">Preston</a></li>
+                    <li><a href="/lesson11/Fish-Haven.html">Fish Haven</a></li>
+                    <li><a href="/lesson11/SodaSprings.html">Soda Springs</a></li>
+                    <li><a href="/lesson11/StormCenter.html">Storm Center</a></li>
+                    <li><a href="/lesson11/ImageGallery.html">Gallery</a></li>
+                </ul>
+     </nav>
+    <main>
+        <h2 class="Title">Preston Idaho</h2>
+
+        <section id="Main">
+            <img id="MainPhoto" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2FPrestonBackground.jfif?v=1612081683341" alt="Sunset">
+            <div class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <hr>
+                <p>Currently: Snowy</p>
+                <p>High: 32&#176; F</p>
+                <p>Wind Chill: 12&#176; F</p>
+                <p>Humidity: 63%</p>
+                <p>Wind Speed: 5 mph</p>
+            </div>
+        </section>
+
+        <section class="Weather_Hide">
+            <h3>7 Day Forecast</h3>
+            <table class="forecast">
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tues</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-sun"></i><br>76&#176; F</td>
+                    <td><i class="fa fa-cloud-sun-rain"></i><br>84&#176; F</td>
+                    <td><i class="fa fa-cloud-sun" ></i><br>72&#176; F</td>
+                    <td><i class="fa fa-sun"></i><br>92&#176; F</td>
+                    <td><i class="fa fa-cloud-sun-rain"></i><br>64&#176; F</td>
+                  <td><i class="fa fa-cloud-sun-rain"></i><br>84&#176; F</td>
+                  <td><i class="fa fa-sun"></i><br>64&#176; F</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="Paragraph">
+            <img id="MAP" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fb0b9043a-662b-4273-b340-dbac5ec40596.jpg?v=1612681673699" alt="weatherc">
+             <div class="trim">
+                                Mother Nature is slipping into winter hibernation mode Tuesday. After several days of active weather, big changes are afoot for the U.S. Tuesday.<br />
+                <br />
+          A strong Canadian high pressure will ensure much of the West, Central and Eastern U.S. stay dry. Mittens, scarves and warm hats will be needed to stay warm with highs in the teens, 20s and 30s from the Mountain West into the central and northern Plains, Midwest, Ohio Valley, Mid-Atlantic and Northeast.<br />
+      <br />
+        Only a few hiccup spots will interrupt the quiet weather pattern Tuesday. Central and southern Florida will have to deal with a few showers. Meanwhile, a low pressure careening towards central California will turn a sunny morning into a soggy afternoon. The moisture lifting into the colder central Sierra will allow snow to develop as the afternoon unfolds, with several inches likely by the end of the day. There could also be a few flurries in the central Appalachians Tuesday evening but no accumulation is expected.<br />
+      <br />
+        The Northwest Coast will slide into the 40s Tuesday afternoon with 50s and 60s common in Los Angeles, Phoenix, Dallas, New Orleans and Jacksonville, Fla. Miami will be the nation&rsquo;s warmest spot with highs in the 80s.
+                            </div>
+                <a href="view-source:https://www.weatherbug.com/news/Today-s-Weather-Outlook">View Full Article</a>
+        </section>
+
+        <section class="contact">
+      
+            <div class="contact-text">
+                <h4>24-7 Weather</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 30 N 1st E</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p><i class="fas fa-phone"></i> (208) 999-9999</p>
+                <p><i class="fas fa-envelope"></i> contact@yourwather.com</p>
+                <br>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a id="home" href="../index.html">Home</a>
+        <div id="cYear"></div>
+        <div id="mod"></div>
+    </footer>
+</body>
+</html>
