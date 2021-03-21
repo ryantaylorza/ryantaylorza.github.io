@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+    <link rel="shortcut icon" href="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Ffavicon.ico?v=1612332915063" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lesson 11 for Ryan Taylor in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="css/large.css" rel="stylesheet">
+        <link href="css/medium.css" rel="stylesheet">
+        <link href="css/week11.css" rel="stylesheet">
+        <link href="css/maps.css" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yellowtail&display=swap" rel="stylesheet">
+    <title>Preston.com | Your Weather HQ</title>
+    </head>
+    
+	<body onload="currentDate();">
+    <div id="Banner">
+    </div>
+    <header>
+        <picture class="logo">
+            <img class="logo_img" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fpexels-rachel-claire-4992636.jpg?v=1613717263989" width="100%" alt="The Hill">
+        </picture>
+        <h1 class="title">Rusican Weather</h1>
+      <br>
+    </header>
+    <nav>
+        <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="PrestonTown.html">Preston</a></li>
+                    <li><a href="SodaSprings.html">Soda Springs</a></li>
+                    <li><a href="Fish-Haven.html">Fish Haven</a></li>
+                    <li><a href="StormCenter.html">Storm Center</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                </ul>
+     </nav>
+    <main>
+        
+        <section class="contact">
+      
+          
+  <div class="maps">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11',
+  center: [-74.50, 40],
+  zoom: 9
+})
+      </div>
+          <div class="contact-text">
+                <h4>24-7 Weather</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 30 N 1st E</p>
+                <p>Preston, ID 83263</p>
+                <br>
+                <p><i class="fas fa-phone"></i> (208) 999-9999</p>
+                <p><i class="fas fa-envelope"></i> contact@yourwather.com</p>
+                <br>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-google-plus-g"></i>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a id="home" href="../index.html">Home</a>
+        <div id="cYear"></div>
+        <div id="mod"></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html lang="en-us">
+	<head>
+    <link rel="shortcut icon" href="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Ffavicon.ico?v=1612332915063" type="image/x-icon">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lesson 11 for Ryan Taylor in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+        <link href="css/small.css" rel="stylesheet">
+        <link href="/css/large.css" rel="stylesheet">
+        <link href="css/week11.css" rel="stylesheet">
+        <link href="/css/medium.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yellowtail&display=swap" rel="stylesheet">
+        <script src="/lesson11/main.js"></script>
+    <title>Preston.com | Your Weather HQ</title>
+    </head>
+    
+	<body onload="currentDate();">
+    <div id="Banner">
+        <script src="/lesson11/script.js"></script>
+    </div>
+    <header>
+        <picture class="logo">
+            <img class="logo_img" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fpexels-rachel-claire-4992636.jpg?v=1613717263989" width="100%" alt="The Hill">
+        </picture>
+        <h1 class="title">Rustican Weather</h1>
+      <br>
+    </header>
+    <nav>
+        <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                    <li><a href="/lesson11/index.html">Home</a></li>
+                    <li><a href="/lesson11/PrestonTown.html">Preston</a></li>
+                    <li><a href="/lesson11/Fish-Haven.html">Fish Haven</a></li>
+                    <li><a href="/lesson11/SodaSprings.html">Soda Springs</a></li>
+                    <li><a href="/lesson11/StormCenter.html">Storm Center</a></li>
+                    <li><a href="/lesson11/ImageGallery.html">Gallery</a></li>
+                </ul>
+     </nav>
+    <main>
+        <h2 class="center">Home Wireframes</h2>
+        <a class="center" href="https://wireframe.cc/pro/pp/83e7f3688421073" target="_blank">
+            <h2>Small Wirebox</h2>
+        </a>
+        <a class="center" href="https://wireframe.cc/pro/pp/65190d5b1421071" target="_blank">
+            <h2>Medium Wirebox</h2>
+        </a>
+        <a class="center" href="https://wireframe.cc/pro/pp/6a1ad2f8e421070" target="_blank">
+            <h2>Large Wirebox</h2>
+        </a>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <h3>Contact Information</h3>
+            <p>&#9993; contact@preston.com</p>
+            <p>&#9742; 1-800-888-9000</p>
+            <a href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="social" src="images/twitter.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social" src="images/instagram.jpg" alt="Instagram"></a>
+        </div>
+        <picture class="map">
+            <img src="images/prestonMap.jpg" alt="GoogleMaps of Preston, ID">
+        </picture>
+        <p>&copy; 2021 | Ryan Taylor | Arizona | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
+        <p class="date">
+            Current Date: <span id="currentDate"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Scope One', 'Trocchi'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
