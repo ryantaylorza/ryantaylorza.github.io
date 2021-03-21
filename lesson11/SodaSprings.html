@@ -9,11 +9,12 @@
         <link href="css/small.css" rel="stylesheet">
         <link href="css/large.css" rel="stylesheet">
         <link href="css/medium.css" rel="stylesheet">
+        <link href="css/week11.css" rel="stylesheet">
         <link href="css/maps.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Yellowtail&display=swap" rel="stylesheet">
-    <title>Preston.com | Your Weather HQ</title>
+    <title>Soda Springs | Your Weather HQ</title>
     </head>
     
 	<body onload="currentDate();">
@@ -23,7 +24,7 @@
         <picture class="logo">
             <img class="logo_img" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fpexels-rachel-claire-4992636.jpg?v=1613717263989" width="100%" alt="The Hill">
         </picture>
-        <h1 class="title">Rusican Weather</h1>
+        <h1 class="title">Soda Springs</h1>
       <br>
     </header>
     <nav>
@@ -32,37 +33,56 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="PrestonTown.html">Preston</a></li>
                     <li><a href="SodaSprings.html">Soda Springs</a></li>
-                    <li><a href="FisherHaven.html">Fish Haven</a></li>
+                    <li><a href="Fish-Haven.html">Fish Haven</a></li>
                     <li><a href="StormCenter.html">Storm Center</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
                 </ul>
      </nav>
     <main>
 
-        <section class="Weather_Hide">
-            <h3>7 Day Forecast</h3>
-            <table class="forecast">
-                <tr>
-                    <th>Sun</th>
-                    <th>Mon</th>
-                    <th>Tues</th>
-                    <th>Wed</th>
-                    <th>Thurs</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                </tr>
-                <tr>
-                    <td><i class="fa fa-sun"></i><br>76&#176; F</td>
-                    <td><i class="fa fa-cloud-sun-rain"></i><br>84&#176; F</td>
-                    <td><i class="fa fa-cloud-sun" ></i><br>72&#176; F</td>
-                    <td><i class="fa fa-sun"></i><br>92&#176; F</td>
-                    <td><i class="fa fa-cloud-sun-rain"></i><br>64&#176; F</td>
-                  <td><i class="fa fa-cloud-sun-rain"></i><br>84&#176; F</td>
-                  <td><i class="fa fa-sun"></i><br>64&#176; F</td>
-                </tr>
-            </table>
-        </section>
+        <div class="banner">
+    
+               <div class="summary">
+               <p id="current-temp"></p>
+            <div id="line2">
+               <p id="left2">Currently:&nbsp;</p> <p id="description"></p>
+            </div>
+            <div id="line3"> 
+               <p id="left3">Humidity:&nbsp;</p> <p id="humidity"></p>
+            </div>
+            <div id="line4"> 
+               <p id="left4">Wind Speed:&nbsp;</p> <p id="windSpeed"></p>
+               </div>
+            <div id="line5"> 
+                <p id="left5">Wind Chill:&nbsp;</p> <p id="output"></p>
+             </div>
+                <script src="windchill.js"></script>
+            </div>
+</div>
 
+
+
+        <div class="fivedayTitle"><h3>Five Day</h3></div>
+        <div class="fiveDay">
+
+            <script src="findDay.js"></script>
+
+               <div class="day1"> <p id="dia1"></p><img id="icon1" src="./images/snowicon.png" alt="Weather Icon" width="100"> 
+            <p id="mon"></p></div> 
+               <div class="day2"> <p id="dia2"></p><img id="icon2" src="./images/overcastIcon.png" alt="Weather Icon" width="100"> 
+            <p id="tue"></p></div> 
+               <div class="day3"> <p id="dia3"></p><img id="icon3" src="./images/sunIcon.png" alt="Weather Icon" width="100">
+            <p id="wed"></p></div> 
+               <div class="day4"> <p id="dia4"></p><img id="icon4" src="./images/overcastIcon.png" alt="Weather Icon" width="100">
+            <p id="thur"></p></div> 
+               <div class="day5"> <p id="dia5"></p><img id="icon5" src="./images/snowicon.png" alt="Weather Icon" width="100">
+            <p id="fri"></p></div> 
+
+        </div>
+
+        
+        <script src="WeatherReader.js"></script>
+  
         <section class="Paragraph">
             <img id="MAP" src="https://cdn.glitch.com/e4c49e35-1fa4-4421-ae76-1c449b2dfd24%2Fb0b9043a-662b-4273-b340-dbac5ec40596.jpg?v=1612681673699" alt="weatherc">
              <div class="trim">
@@ -101,4 +121,5 @@
         <div id="cYear"></div>
         <div id="mod"></div>
     </footer>
+  </body>
   </html>
